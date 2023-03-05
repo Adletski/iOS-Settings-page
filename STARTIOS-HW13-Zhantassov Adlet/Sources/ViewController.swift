@@ -15,11 +15,17 @@ class ViewController: UIViewController {
     
     private lazy var tableView: UITableView = {
         let tableView = UITableView(frame: .zero, style: .grouped)
-        tableView.register(UITableViewCell.self, forCellReuseIdentifier: "cell")
+        tableView.register(SettingTableViewCell.self, forCellReuseIdentifier: "cell")
         tableView.dataSource = self
         tableView.delegate = self
         return tableView
     }()
+    
+//    var customSwitch: UISwitch = {
+//        let customSwitch = UISwitch(frame: CGRectZero) as UISwitch
+//        customSwitch.isOn = false
+//        return customSwitch
+//    }()
     
     
     //MARK: - Lifecycle
