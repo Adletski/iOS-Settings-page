@@ -8,10 +8,26 @@
 import UIKit
 
 class ViewController: UIViewController {
-
+    
+    //MARK: - SetupData
+    
+    
+    
+    //MARK: - Lifecycle
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
+        setupViews()
+        setupConstraints()
+    }
+    
+    //MARK: - SetupViews
+    private func setupViews() {
+        view.backgroundColor = .white
+    }
+    
+    //MARK: - SetupConstraints
+    private func setupConstraints() {
+        
     }
 
 
