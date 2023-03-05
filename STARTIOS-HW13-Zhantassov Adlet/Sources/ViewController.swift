@@ -15,13 +15,12 @@ class ViewController: UIViewController {
     
     private lazy var tableView: UITableView = {
         let tableView = UITableView(frame: .zero, style: .grouped)
-        tableView.register(UITableViewCell.self, forCellReuseIdentifier: "cell")
+        tableView.register(SettingTableViewCell.self, forCellReuseIdentifier: "cell")
         tableView.dataSource = self
         tableView.delegate = self
         return tableView
     }()
-    
-    
+        
     //MARK: - Lifecycle
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -44,7 +43,5 @@ class ViewController: UIViewController {
             tableView.top.right.bottom.left.equalTo(view)
         }
     }
-
-
 }
 

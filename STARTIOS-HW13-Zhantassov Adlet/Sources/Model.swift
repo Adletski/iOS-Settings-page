@@ -16,4 +16,6 @@ struct Setting {
     let iconImage: UIImage
     let name: String
     let status: Accessory
+    let bgColor: UIColor
+    var detailText: String = ""
 }
