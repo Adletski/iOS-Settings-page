@@ -10,7 +10,9 @@ import SnapKit
 
 class ViewController: UIViewController {
     
-    //MARK: - SetupData
+    //MARK: - Data
+    var settings: [[Setting]]?
+    
     private lazy var tableView: UITableView = {
         let tableView = UITableView(frame: .zero, style: .grouped)
         tableView.register(UITableViewCell.self, forCellReuseIdentifier: "cell")
@@ -23,6 +25,7 @@ class ViewController: UIViewController {
     //MARK: - Lifecycle
     override func viewDidLoad() {
         super.viewDidLoad()
+        settings = Setting.settings
         setupViews()
         setupConstraints()
     }
