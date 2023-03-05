@@ -15,7 +15,8 @@ class SettingTableViewCell: UITableViewCell {
             iconView.image = setting?.iconImage
             name.text = setting?.name
             status = setting?.status
-            bgView.backgroundColor = .orange
+            bgView.backgroundColor = setting?.bgColor
+            detailText.text = setting?.detailText
         }
     }
     
@@ -32,9 +33,16 @@ class SettingTableViewCell: UITableViewCell {
     }()
     
     private lazy var name: UILabel = {
-       let label = UILabel()
+        let label = UILabel()
         label.font = .systemFont(ofSize: 17)
         return label
+    }()
+    
+    private lazy var detailText: UILabel = {
+        let detailText = UILabel()
+        detailText.font = .systemFont(ofSize: 15)
+        detailText.textColor = .systemGray
+        return detailText
     }()
     
     private lazy var status: Accessory? = .checkmark
@@ -55,7 +63,7 @@ class SettingTableViewCell: UITableViewCell {
         bgView.addSubview(iconView)
         contentView.addSubview(name)
         contentView.addSubview(bgView)
-//        contentView.addSubview(status)
+        contentView.addSubview(detailText)
     }
     
     //MARK: - SetupConstraints
@@ -74,9 +82,9 @@ class SettingTableViewCell: UITableViewCell {
             name.centerY.equalTo(contentView)
             name.left.equalTo(iconView.snp.right).offset(15)
         }
-//        status.snp.makeConstraints { status in
-//            status.centerY.equalTo(contentView)
-//            status.right.equalTo(contentView).offset(-20)
-//        }
+        detailText.snp.makeConstraints { detailText in
+            detailText.centerY.equalTo(contentView)
+            detailText.right.equalTo(contentView).offset(-20)
+        }
     }
 }

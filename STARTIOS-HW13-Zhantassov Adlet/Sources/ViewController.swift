@@ -20,14 +20,7 @@ class ViewController: UIViewController {
         tableView.delegate = self
         return tableView
     }()
-    
-//    var customSwitch: UISwitch = {
-//        let customSwitch = UISwitch(frame: CGRectZero) as UISwitch
-//        customSwitch.isOn = false
-//        return customSwitch
-//    }()
-    
-    
+        
     //MARK: - Lifecycle
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -50,7 +43,5 @@ class ViewController: UIViewController {
             tableView.top.right.bottom.left.equalTo(view)
         }
     }
-
-
 }
 
