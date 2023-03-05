@@ -12,6 +12,8 @@
 		60E049C929B4AF27006A958E /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60E049C829B4AF27006A958E /* ViewController.swift */; };
 		60E049CE29B4AF29006A958E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 60E049CD29B4AF29006A958E /* Assets.xcassets */; };
 		60E049D129B4AF29006A958E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 60E049CF29B4AF29006A958E /* LaunchScreen.storyboard */; };
+		60E049DA29B4B66A006A958E /* SnapKit in Frameworks */ = {isa = PBXBuildFile; productRef = 60E049D929B4B66A006A958E /* SnapKit */; };
+		60E049E229B4B7B6006A958E /* Ext+TableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60E049E129B4B7B6006A958E /* Ext+TableView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +24,7 @@
 		60E049CD29B4AF29006A958E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		60E049D029B4AF29006A958E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		60E049D229B4AF29006A958E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		60E049E129B4B7B6006A958E /* Ext+TableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Ext+TableView.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,6 +32,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				60E049DA29B4B66A006A958E /* SnapKit in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -54,14 +58,63 @@
 		60E049C329B4AF27006A958E /* STARTIOS-HW13-Zhantassov Adlet */ = {
 			isa = PBXGroup;
 			children = (
-				60E049C429B4AF27006A958E /* AppDelegate.swift */,
-				60E049C629B4AF27006A958E /* SceneDelegate.swift */,
-				60E049C829B4AF27006A958E /* ViewController.swift */,
-				60E049CD29B4AF29006A958E /* Assets.xcassets */,
-				60E049CF29B4AF29006A958E /* LaunchScreen.storyboard */,
-				60E049D229B4AF29006A958E /* Info.plist */,
+				60E049DC29B4B68E006A958E /* Sources */,
+				60E049DB29B4B688006A958E /* Resources */,
 			);
 			path = "STARTIOS-HW13-Zhantassov Adlet";
+			sourceTree = "<group>";
+		};
+		60E049DB29B4B688006A958E /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				60E049DD29B4B69E006A958E /* Configuration */,
+				60E049CD29B4AF29006A958E /* Assets.xcassets */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		60E049DC29B4B68E006A958E /* Sources */ = {
+			isa = PBXGroup;
+			children = (
+				60E049E029B4B77D006A958E /* UIKit+Extensions */,
+				60E049C829B4AF27006A958E /* ViewController.swift */,
+				60E049DF29B4B6D9006A958E /* App */,
+				60E049DE29B4B6CE006A958E /* Storyboards */,
+			);
+			path = Sources;
+			sourceTree = "<group>";
+		};
+		60E049DD29B4B69E006A958E /* Configuration */ = {
+			isa = PBXGroup;
+			children = (
+				60E049D229B4AF29006A958E /* Info.plist */,
+			);
+			path = Configuration;
+			sourceTree = "<group>";
+		};
+		60E049DE29B4B6CE006A958E /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				60E049CF29B4AF29006A958E /* LaunchScreen.storyboard */,
+			);
+			path = Storyboards;
+			sourceTree = "<group>";
+		};
+		60E049DF29B4B6D9006A958E /* App */ = {
+			isa = PBXGroup;
+			children = (
+				60E049C629B4AF27006A958E /* SceneDelegate.swift */,
+				60E049C429B4AF27006A958E /* AppDelegate.swift */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		60E049E029B4B77D006A958E /* UIKit+Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				60E049E129B4B7B6006A958E /* Ext+TableView.swift */,
+			);
+			path = "UIKit+Extensions";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -80,6 +133,9 @@
 			dependencies = (
 			);
 			name = "STARTIOS-HW13-Zhantassov Adlet";
+			packageProductDependencies = (
+				60E049D929B4B66A006A958E /* SnapKit */,
+			);
 			productName = "STARTIOS-HW13-Zhantassov Adlet";
 			productReference = 60E049C129B4AF27006A958E /* STARTIOS-HW13-Zhantassov Adlet.app */;
 			productType = "com.apple.product-type.application";
@@ -108,6 +164,9 @@
 				Base,
 			);
 			mainGroup = 60E049B829B4AF27006A958E;
+			packageReferences = (
+				60E049D829B4B66A006A958E /* XCRemoteSwiftPackageReference "SnapKit" */,
+			);
 			productRefGroup = 60E049C229B4AF27006A958E /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -135,6 +194,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				60E049C929B4AF27006A958E /* ViewController.swift in Sources */,
+				60E049E229B4B7B6006A958E /* Ext+TableView.swift in Sources */,
 				60E049C529B4AF27006A958E /* AppDelegate.swift in Sources */,
 				60E049C729B4AF27006A958E /* SceneDelegate.swift in Sources */,
 			);
@@ -277,7 +337,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 6YX8RWQNTP;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = "STARTIOS-HW13-Zhantassov Adlet/Info.plist";
+				INFOPLIST_FILE = "STARTIOS-HW13-Zhantassov Adlet/Resources/Configuration/Info.plist";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
@@ -304,7 +364,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 6YX8RWQNTP;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = "STARTIOS-HW13-Zhantassov Adlet/Info.plist";
+				INFOPLIST_FILE = "STARTIOS-HW13-Zhantassov Adlet/Resources/Configuration/Info.plist";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
@@ -344,6 +404,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		60E049D829B4B66A006A958E /* XCRemoteSwiftPackageReference "SnapKit" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/SnapKit/SnapKit.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		60E049D929B4B66A006A958E /* SnapKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 60E049D829B4B66A006A958E /* XCRemoteSwiftPackageReference "SnapKit" */;
+			productName = SnapKit;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 60E049B929B4AF27006A958E /* Project object */;
 }
