@@ -17,6 +17,7 @@
 		60E049E429B4B951006A958E /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60E049E329B4B951006A958E /* Model.swift */; };
 		60E049E629B4B9D9006A958E /* Ext+Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60E049E529B4B9D9006A958E /* Ext+Model.swift */; };
 		60E049E829B4C0BB006A958E /* SettingTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60E049E729B4C0BB006A958E /* SettingTableViewCell.swift */; };
+		60E049EA29B5053C006A958E /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60E049E929B5053C006A958E /* DetailViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -31,6 +32,7 @@
 		60E049E329B4B951006A958E /* Model.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Model.swift; sourceTree = "<group>"; };
 		60E049E529B4B9D9006A958E /* Ext+Model.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Ext+Model.swift"; sourceTree = "<group>"; };
 		60E049E729B4C0BB006A958E /* SettingTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingTableViewCell.swift; sourceTree = "<group>"; };
+		60E049E929B5053C006A958E /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -86,6 +88,7 @@
 				60E049C829B4AF27006A958E /* ViewController.swift */,
 				60E049E329B4B951006A958E /* Model.swift */,
 				60E049E729B4C0BB006A958E /* SettingTableViewCell.swift */,
+				60E049E929B5053C006A958E /* DetailViewController.swift */,
 				60E049DF29B4B6D9006A958E /* App */,
 				60E049DE29B4B6CE006A958E /* Storyboards */,
 			);
@@ -209,6 +212,7 @@
 				60E049E229B4B7B6006A958E /* Ext+TableView.swift in Sources */,
 				60E049C529B4AF27006A958E /* AppDelegate.swift in Sources */,
 				60E049C729B4AF27006A958E /* SceneDelegate.swift in Sources */,
+				60E049EA29B5053C006A958E /* DetailViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
