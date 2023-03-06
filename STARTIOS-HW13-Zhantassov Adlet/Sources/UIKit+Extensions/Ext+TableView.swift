@@ -37,4 +37,11 @@ extension ViewController: UITableViewDelegate, UITableViewDataSource {
         cell?.setting = settings?[indexPath.section][indexPath.row]
         return cell ?? UITableViewCell()
     }
+    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        tableView.deselectRow(at: indexPath, animated: true)
+        let detailVC = DetailViewController()
+        detailVC.setting = settings?[indexPath.section][indexPath.row]
+        navigationController?.pushViewController(detailVC, animated: true)
+    }
 }
